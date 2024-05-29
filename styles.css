@@ -1,0 +1,150 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #ff9a9e, #a18cd1, #89f7fe);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.surah-list {
+    background: linear-gradient(135deg, #ff9a9e, #a18cd1, #89f7fe);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.surah-content {
+    background: linear-gradient(135deg, #ff9a9e, #a18cd1, #89f7fe);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.content-wrapper {
+    margin-top: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.surah-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.ayat {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.ayat-arabic {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.ayat-translation {
+    font-size: 1rem;
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #555;
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.audio-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3498db, #2ecc71, #e74c3c);
+    z-index: -1;
+    transform: translate(-25%, -25%);
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.audio-container audio {
+    width: 100%;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #2c3e50, #3498db, #2ecc71);
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.audio-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}

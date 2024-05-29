@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Qur'an</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-bg flex-center">
+    <div class="flex full-height w-full">
+        <!-- Daftar Surah -->
+        <div class="w-1/4 surah-list p-4 overflow-y-auto flex-center">
+            <div class="content-wrapper">
+                <h2 class="text-xl font-bold mb-4 text-center text-white">Daftar Surah</h2>
+                <ul id="daftar-surat" class="text-center"></ul>
+            </div>
+        </div>
+        <!-- Isi Surah -->
+        <div class="w-3/4 surah-content p-4 overflow-y-auto flex-center">
+            <div id="isi-surat" class="content-wrapper">
+                <h2 class="surah-title">Surah</h2>
+                <p class="text-center text-white">Pilih sebuah surah dari daftar untuk melihat isinya.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
